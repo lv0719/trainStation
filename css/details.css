@@ -3,6 +3,9 @@
   background-color: #f8f9fa;
   padding-bottom: 20px;
 }
+.post_body p img {
+  width: 100%;
+}
 .footer-msg {
   display: flex;
   flex-wrap: wrap;
