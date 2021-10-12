@@ -1,0 +1,160 @@
+/* 主题内容大盒子 */
+.index-main {
+  width: 100%;
+  padding: 0 60px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+.bot-icons {
+  position: relative;
+  top: -2px;
+}
+/* 标题样式 */
+.title-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.small-title {
+  position: relative;
+  text-align: center;
+}
+.small-title::after {
+  content: "";
+  width: 43%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  background-color: #e6e6e6;
+  right: 1%;
+  top: 13px;
+}
+.small-title::before {
+  content: "";
+  width: 43%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  background-color: #e6e6e6;
+  left: 1%;
+  top: 13px;
+}
+/* 图片 */
+.img-div-box {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.img-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.img-self {
+  width: 100%;
+  min-height: 100%;
+}
+.img-title {
+  text-align: center;
+}
+
+/* 人物介绍 */
+.person-box {
+  border-bottom: 1px solid #e6e6e6;
+  margin: 20px 0px;
+  /* margin: 0 12px; */
+}
+/* 新闻 */
+.news-title {
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  height: 100px;
+  padding: 10px;
+}
+/* footer部分 */
+.footer-top {
+  background-color: #f8f9fa;
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+.footer-msg {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  /* line-height: 100px; */
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  border-bottom: 1px solid #ebeef0;
+}
+.footer-msg2 {
+  display: flex;
+  height: 80px;
+  line-height: 80px;
+  justify-content: center;
+  color: #999999;
+}
+.footer-msg div {
+  margin-right: 10px;
+}
+.img-codes {
+  width: 50px;
+  height: 50px;
+  margin: 15px 0;
+  margin-right: 10px;
+}
+.icon-bot {
+  margin-right: 5px;
+}
+@media (min-width: 1000px) {
+  .news-title {
+    font-size: 14px;
+  }
+}
+/* 小屏幕时 */
+@media (max-width: 768px) {
+  .news-title {
+    padding: 10px;
+    height: 70px;
+    text-align: center;
+    font-size: 12px !important;
+    margin-bottom: 24px;
+  }
+  .index-main {
+    padding: 0 30px;
+  }
+  .small-title::before {
+    width: 35%;
+  }
+  .small-title::after {
+    width: 35%;
+  }
+}
+/* 超小屏幕尺寸 */
+@media (max-width: 415px) {
+  .news-title {
+    padding: 10px;
+    height: 57px;
+    line-height: normal;
+    /* line-height: 29px; */
+    /* text-align: center; */
+    text-align: initial;
+    font-size: 12px !important;
+  }
+  .img-box {
+    width: 125px;
+    height: 125px;
+  }
+  .location {
+    margin-top: 10px;
+  }
+  .tel {
+    margin-top: -25px;
+  }
+}
+
+.img-fluid {
+  width: 100%;
+}

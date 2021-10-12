@@ -1,0 +1,161 @@
+/* footer部分 */
+.footer-top {
+  background-color: #f8f9fa;
+  padding-bottom: 20px;
+}
+.footer-msg {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  /* line-height: 100px; */
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  border-bottom: 1px solid #ebeef0;
+}
+.footer-msg2 {
+  display: flex;
+  height: 80px;
+  line-height: 80px;
+  justify-content: center;
+  color: #999999;
+}
+.footer-msg div {
+  margin-right: 10px;
+}
+.img-codes {
+  width: 50px;
+  height: 50px;
+  margin: 15px 0;
+  margin-right: 10px;
+}
+.icon-bot {
+  margin-right: 5px;
+}
+.news-main {
+  /* border: 1px solid red; */
+  padding: 0px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.row > * {
+  padding: 0;
+}
+/* 一个新闻盒子 */
+.news-img-title-box {
+  width: 45%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.news-imgs {
+  width: 35%;
+  height: 100%;
+}
+.news-imgs img {
+  display: block;
+  width: 100%;
+  height: 108px;
+}
+.new-titles-box {
+  width: 65%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  height: 108px;
+  padding: 20px;
+}
+.news-titles {
+  font-size: 12px;
+  margin: 0;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.news-keyword {
+  font-size: 12px;
+  color: #999;
+  padding-top: 10px;
+}
+.divmargin {
+  margin-bottom: 30px;
+}
+.page-item {
+  cursor: pointer;
+}
+.disabled {
+  cursor: no-drop;
+}
+
+/* hover 放大效果 */
+.news-a-box {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.news-a-box:hover {
+  transform: scale(1.02);
+  /* box-shadow: 0px 0px 30px #ccc; */
+}
+@media (min-width: 768px) and (max-width: 997px) {
+  .new-titles-box {
+    height: 120px;
+  }
+  .news-imgs img {
+    height: 120px;
+  }
+}
+/* 平板及以下时 */
+@media (max-width: 767px) {
+  .news-img-title-box {
+    width: 100%;
+    flex-direction: column;
+  }
+  .news-imgs img {
+    height: 200px;
+  }
+
+  .new-titles-box {
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+  }
+  .new-titles-box {
+    height: 120px;
+  }
+  .news-imgs {
+    width: 100%;
+  }
+  .divmargin {
+    /* margin-bottom: 0px; */
+  }
+}
+/* 超小屏幕尺寸 */
+@media (max-width: 415px) {
+  .news-title {
+    padding: 14px 0;
+    height: 50px;
+    text-align: center;
+    /* line-height: 70px; */
+    font-size: 12px !important;
+  }
+  .img-box {
+    width: 125px;
+    height: 125px;
+  }
+  .location {
+    margin-top: 10px;
+  }
+  .tel {
+    margin-top: -25px;
+  }
+  .news-imgs img {
+    height: 120px;
+  }
+}

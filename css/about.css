@@ -1,0 +1,104 @@
+/* footer部分 */
+.footer-top {
+  background-color: #f8f9fa;
+  padding-bottom: 20px;
+}
+.footer-msg {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  border-bottom: 1px solid #ebeef0;
+}
+.footer-msg2 {
+  display: flex;
+  height: 80px;
+  line-height: 80px;
+  justify-content: center;
+  color: #999999;
+}
+.footer-msg div {
+  margin-right: 10px;
+}
+.img-codes {
+  width: 50px;
+  height: 50px;
+  margin: 15px 0;
+  margin-right: 10px;
+}
+.icon-bot {
+  margin-right: 5px;
+}
+
+/* 主要内容区域 */
+.about-main {
+  padding: 0px 60px;
+  margin-bottom: 50px !important;
+}
+
+.left-msgs {
+  padding-left: 20px;
+  /* height: 50%; */
+}
+.last-p {
+  margin-bottom: 0;
+}
+.about-left-word {
+  margin-bottom: 20px;
+}
+/* 实现吸底效果 */
+.wrapper-about {
+  box-sizing: border-box !important;
+  position: relative;
+  min-height: 100% !important;
+  padding-bottom: 180px !important;
+}
+.about-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+}
+@media (max-width: 900px) {
+  .about-main {
+    padding: 0px 10px;
+  }
+}
+@media (max-width: 768px) {
+  #baidumap {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  .about-left-word {
+    height: 400px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 567px) {
+  .about-left-word {
+    /* color: red; */
+    height: auto;
+    font-size: 18px;
+  }
+  .last-p {
+    margin-bottom: 20px;
+  }
+  .about-left-word {
+    height: auto;
+    font-size: 16px;
+  }
+  .left-msgs {
+    padding: 0;
+  }
+  .about-main {
+    /* padding: 0px 80px; */
+    margin-bottom: 10px !important;
+  }
+  .about-location {
+    position: relative;
+    top: 13px;
+  }
+}
